@@ -80,14 +80,14 @@ class Game:
             else:
                 current_player.set_getting_out_of_penalty_box_status(False)
         
-        
-        current_player.set_place(roll)
-        
-        print(current_player.get_player_name(),
-                      '\'s new location is ' ,
-                      str(current_player.get_place()))
-     
-        self.__ask_question()
+        if current_player.get_getting_out_of_penalty_box_status():
+            current_player.set_place(roll)
+            
+            print(current_player.get_player_name(),
+                          '\'s new location is ' ,
+                          str(current_player.get_place()))
+         
+            self.__ask_question()
             
   
             
