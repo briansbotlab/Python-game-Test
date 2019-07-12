@@ -1,6 +1,7 @@
 # Python-game-Test
 GameTest.py 是非常雜亂無章的程式碼</br>
 GameTest_v2.py 是GameTest.py 經過修改後比較有條理的程式碼</br>
+有些部分有進行大幅度的修改，目的是讓整體的運作能更為流暢。</br>
 
 
 該程式大綱是在描述一個遊戲，</br>
