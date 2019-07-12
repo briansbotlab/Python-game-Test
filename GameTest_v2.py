@@ -120,6 +120,8 @@ class Game:
               str(self.__players[self.__current_player].get_purse_status()),
               'Gold Coins.')
         
+        self.__next_player()
+        
         winner = self.__did_player_win()
          
         return winner
@@ -254,7 +256,7 @@ class Place:
 if __name__ == "__main__":
     not_a_winner = False
     game = Game()
-    game.set_num_of_questions(10)
+    game.set_num_of_questions(50)
     game.set_questions_category('Pop','Science','Sports','Rock')
     player1 = Player("Chet")
     player2 = Player("Pat")
